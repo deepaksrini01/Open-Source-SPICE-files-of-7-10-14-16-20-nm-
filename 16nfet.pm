@@ -1,5 +1,5 @@
-** PTM-MG 16nm HSPICE Model Card for HP NFET
-** Nominal VDD=0.85V
+** PTM-MG HSPICE Model Card for 16nm LSTP NFET 
+** Nominal VDD=0.85
 
 .model nfet nmos level = 72 
 + bulkmod = 1 
@@ -13,18 +13,18 @@
 +rgatemod= 0               rgeomod = 1               shmod   = 0               nqsmod  = 0             
 +coremod = 0               cgeomod = 2               capmod  = 0               tnom    = 300.15        
 *======================== process =========================*
-+eot     = 8e-010          eotbox  = 1.4e-007        tfin    = 1.2e-008        toxp    = 1.35e-009     
-+nbody   = 1e+023          phig    = 4.4061           epsrox  = 3.9             epsrsub = 11.9          
++eot     = 1e-009          eotbox  = 1.4e-007        tfin    = 1.2e-008        toxp    = 1.35e-009     
++nbody   = 1e+023          phig    = 4.5887          epsrox  = 3.9             epsrsub = 11.9          
 +easub   = 4.05            ni0sub  = 1.1e+016        bg0sub  = 1.12            nc0sub  = 2.86e+025     
 +nsd     = 3e+026          ngate   = 0               nfin    = 1               d       = 4e-008        
 +nseg    = 5               l       = 2e-008        
 *========================== w/l ===========================*
-+xl      = 0               lint    = 1e-009          ll      = 0               lln     = 1             
++xl      = 0               lint    = -1e-009         ll      = 0               lln     = 1             
 +llc     = 0               dlc     = 0               dlbin   = 0               hfin    = 2.6e-008      
 +fech    = 1               deltaw  = 0               deltawcv= 0               fechcv  = 1             
 +hepi    = 9.5e-009      
 *======================== geometry ========================*
-+tsili   = 9e-009          rhoc    = 1.5e-12          cratio  = 0.5             deltaprsd= 0             
++tsili   = 9e-009          rhoc    = 1.5e-012          cratio  = 0.5             deltaprsd= 0             
 +sdterm  = 0               ldg     = 3e-009          epsrsp  = 3.9             tgate   = 9e-009        
 +tmask   = 0               asiliend= 0               arsdend = 0               prsdend = 0             
 +nsde    = 3e+025          rgeoa   = 1               rgeob   = 0               rgeoc   = 0             
@@ -36,8 +36,8 @@
 ************************************************************
 +cit     = 1.3e-005      
 *========================== vth ===========================*
-+cdsc    = 0.018           cdscd   = 0.007           dvt0    = 0.01            dvt1    = 0.69          
-+phin    = 0.05            eta0    = 0.5261           dsub    = 0.9             k1rsce  = 0             
++cdsc    = 0.021           cdscd   = 0.007           dvt0    = 0.01            dvt1    = 0.69          
++phin    = 0.05            eta0    = 0.7358          dsub    = 0.9             k1rsce  = 0             
 +lpe0    = 5e-009          dvtshift= 0               qmfactor= 0               qmtceniv= 0             
 +qmtcencv= 0               etaqm   = 0.54            qm0     = 0.001143        pqm     = 0.66          
 +qm0acc  = 0.001           pqmacc  = 0.66            delvfbacc= 0               u0      = 0.0448        

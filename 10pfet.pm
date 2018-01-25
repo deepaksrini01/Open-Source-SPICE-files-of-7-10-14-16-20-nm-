@@ -1,4 +1,4 @@
-** PTM-MG 10nm HSPICE Model Card for HP PFET 
+** PTM-MG HSPICE Model Card for 10nm LSTP PFET 
 ** Nominal VDD=0.75
 
 .model pfet pmos level = 72 
@@ -13,18 +13,18 @@
 +rgatemod= 0               rgeomod = 1               shmod   = 0               nqsmod  = 0             
 +coremod = 0               cgeomod = 2               capmod  = 0               tnom    = 300.15        
 *======================== process =========================*
-+eot     = 6.8e-010        eotbox  = 1.4e-007        tfin    = 8e-009          toxp    = 1.2e-009      
-+nbody   = 2.5e+022        phig    = 4.7509          epsrox  = 3.9             epsrsub = 11.9          
++eot     = 8.8e-010        eotbox  = 1.4e-007        tfin    = 8e-009          toxp    = 1.2e-009      
++nbody   = 2.5e+022        phig    = 4.5662          epsrox  = 3.9             epsrsub = 11.9          
 +easub   = 4.05            ni0sub  = 1.1e+016        bg0sub  = 1.12            nc0sub  = 2.86e+025     
 +nsd     = 3e+026          ngate   = 0               nfin    = 1               d       = 4e-008        
 +nseg    = 5               l       = 1.4e-008      
 *========================== w/l ===========================*
-+xl      = 0               lint    = 6e-010          ll      = 0               lln     = 1             
++xl      = 0               lint    = 0               ll      = 0               lln     = 1             
 +llc     = 0               dlc     = 0               dlbin   = 0               hfin    = 2.1e-008      
 +fech    = 1               deltaw  = 0               deltawcv= 0               fechcv  = 1             
 +hepi    = 8.5e-009      
 *======================== geometry ========================*
-+tsili   = 7e-009          rhoc    = 7e-13        cratio  = 0.5             deltaprsd= 0             
++tsili   = 7e-009          rhoc    = 7e-013          cratio  = 0.5             deltaprsd= 0             
 +sdterm  = 0               ldg     = 2e-009          epsrsp  = 3.9             tgate   = 8e-009        
 +tmask   = 0               asiliend= 0               arsdend = 0               prsdend = 0             
 +nsde    = 6e+025          rgeoa   = 1               rgeob   = 0               rgeoc   = 0             
@@ -36,11 +36,11 @@
 ************************************************************
 +cit     = 1.3e-005      
 *========================== vth ===========================*
-+cdsc    = 0.032           cdscd   = 0.007           dvt0    = 0.01            dvt1    = 0.69          
-+phin    = 0.05            eta0    = 0.93            dsub    = 0.9             k1rsce  = 0             
++cdsc    = 0.024           cdscd   = 0.007           dvt0    = 0.01            dvt1    = 0.69          
++phin    = 0.05            eta0    = 0.57            dsub    = 0.9             k1rsce  = 0             
 +lpe0    = 5e-009          dvtshift= 0               qmfactor= 0               qmtceniv= 0             
 +qmtcencv= 0               etaqm   = 0.54            qm0     = 0.001143        pqm     = 0.66          
-+qm0acc  = 0.001           pqmacc  = 0.66            delvfbacc= 0               u0      = 0.0376        
++qm0acc  = 0.001           pqmacc  = 0.66            delvfbacc= 0               u0      = 0.036       
 *======================== mobility ========================*
 +etamob  = 2               up      = 0               lpa     = 1               ua      = 0.3           
 +aua     = 0               bua     = 1e-007          eu      = 1.8             ud      = 0             
