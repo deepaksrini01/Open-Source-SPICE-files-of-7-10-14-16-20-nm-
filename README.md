@@ -1,1 +1,1 @@
-# The above files are of HP
+# The above files are of lstp
